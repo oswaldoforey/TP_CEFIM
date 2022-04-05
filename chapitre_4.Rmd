@@ -2,4 +2,12 @@
 
 # test insertion shiny app
 
-je fais un test
+je fais un test encore mieux c'est génial
+
+```{r}
+
+knitr::include_app(" https://oswaldoforey.shinyapps.io/TP_test/")
+
+```
+
+
