@@ -14,9 +14,19 @@ editor_options:
   chunk_output_type: console
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = FALSE,
+	message = FALSE,
+	warning = FALSE
+)
+library(tidyverse)
+
+```
+
 # Analyse des données mondiales
 
-# POPULATION - Données UN 1950-2020
+## POPULATION - Données UN 1950-2020
 
 ```{r DONNEES POPULATION MONDIALE}
 
@@ -35,7 +45,7 @@ population_1950_UN<-read_delim("WPP2019_POP_F01_1_TOTAL_POPULATION_BOTH_SEXES_UN
 
 # exploration des pays
 
-pop_pays<-population_1950_UN |> distinct(region)
+ pop_pays<-population_1950_UN |> distinct(region)
 
 # codes iso
 
@@ -90,7 +100,7 @@ pop_pays_uniquement<-population_1950_UN_iso_pays |> distinct(region)
 
 # exploration légendes zone géographique
 
-population_1950_UN_iso |> distinct(Type)
+# population_1950_UN_iso |> distinct(Type)
 
 # graphique pour le monde entier
 
@@ -126,8 +136,8 @@ continent_population<-population_1950_UN_iso |>
   ungroup()
 
 # vérification que tout va bien
-continent_population|> 
-  distinct(continent)
+# continent_population|> 
+#   distinct(continent)
 
 # pour faire un geom_line
 # https://statisticsglobe.com/ggplot2-geom_path-each-group-only-one-observation-in-r

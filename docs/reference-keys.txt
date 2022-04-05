@@ -1,8 +1,4 @@
 analyse-des-données-mondiales
 population---données-un-1950-2020
 population-graphique-monde-entier
-setup
-démarche-actualisée---24-03-2022
-installer-longlet-git-dans-rstudio
-modifier-son-livre-et-mettre-à-jour-en-ligne
 test-insertion-shiny-app
