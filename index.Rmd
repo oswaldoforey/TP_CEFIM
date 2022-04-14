@@ -28,6 +28,8 @@ library(tidyverse)
 
 ## POPULATION - Données UN 1950-2020
 
+On voit sur le graphique suivant que la population augmente 
+
 ```{r DONNEES POPULATION MONDIALE}
 
 library(tidyverse)
@@ -120,9 +122,9 @@ ggplot()+
 # graphique 2 : évolution de la population par continent
 
 # on regarde les niveaux de la colonne region une fois dans la catégorie Subregion de la colonne Type pour voir comment rassembler le plus simplement possible
-population_1950_UN_iso |>   
-  filter(Type=="Subregion") |>
-  distinct(region)
+# population_1950_UN_iso |>   
+#   filter(Type=="Subregion") |>
+#   distinct(region)
 
 # on rassemble les régions dans des continents en extrayant le dernier mot à droite dans une nouvelle colonne
 
@@ -154,8 +156,8 @@ ggplot(continent_population )+
 
 # verification des valeurs de population
 
-test<-continent_population |> 
-  filter(annee==2020)
+# test<-continent_population |> 
+#   filter(annee==2020)
 
 
 ```

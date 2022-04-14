@@ -11,3 +11,4 @@ knitr::include_app(" https://oswaldoforey.shinyapps.io/TP_test/")
 ```
 
 
+Mais pourquoi des fois ça marche comme ça veut??
